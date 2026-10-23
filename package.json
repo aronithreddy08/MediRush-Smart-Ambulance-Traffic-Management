@@ -2,7 +2,7 @@
   "name": "medirush-project",
   "version": "1.0.0",
   "private": true,
-  "description": "MediRush — AI-Powered Smart Ambulance Traffic Management System",
+  "description": "MediRush - AI-Powered Smart Ambulance Traffic Management System",
   "scripts": {
     "dev": "npm run dev --prefix dashboard",
     "build": "npm run build --prefix dashboard",
