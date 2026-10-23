@@ -1,0 +1,37 @@
+{
+  "nodes": [
+    {"id": "N01", "name": "Residency Road Origin A", "lat": 12.9698, "lng": 77.6012, "type": "EMERGENCY_START"},
+    {"id": "N02", "name": "Mayo Hall Junction", "lat": 12.9730, "lng": 77.6070, "type": "INTERSECTION"},
+    {"id": "N03", "name": "MG Road Signal 01", "lat": 12.9735, "lng": 77.6075, "type": "SIGNAL_NODE", "signal_id": "SIG-01"},
+    {"id": "N04", "name": "Trinity Circle Signal 02", "lat": 12.9724, "lng": 77.6178, "type": "SIGNAL_NODE", "signal_id": "SIG-02"},
+    {"id": "N05", "name": "Ulsoor Lake Link", "lat": 12.9790, "lng": 77.6195, "type": "INTERSECTION"},
+    {"id": "N06", "name": "Apex Trauma Center Dest", "lat": 12.9820, "lng": 77.6180, "type": "HOSPITAL_NODE", "hospital_id": "HOSP-01"},
+    {"id": "N07", "name": "Cubbon Park Gate Signal 06", "lat": 12.9765, "lng": 77.5982, "type": "SIGNAL_NODE", "signal_id": "SIG-06"},
+    {"id": "N08", "name": "Vidhana Soudha North", "lat": 12.9850, "lng": 77.5920, "type": "INTERSECTION"},
+    {"id": "N09", "name": "Metro Trauma Hospital Dest", "lat": 12.9950, "lng": 77.5950, "type": "HOSPITAL_NODE", "hospital_id": "HOSP-03"},
+    {"id": "N10", "name": "Richmond Circle Signal 04", "lat": 12.9642, "lng": 77.5968, "type": "SIGNAL_NODE", "signal_id": "SIG-04"},
+    {"id": "N11", "name": "Corporation Circle Signal 05", "lat": 12.9680, "lng": 77.5895, "type": "SIGNAL_NODE", "signal_id": "SIG-05"},
+    {"id": "N12", "name": "St. Jude Heart Institute Dest", "lat": 12.9650, "lng": 77.5820, "type": "HOSPITAL_NODE", "hospital_id": "HOSP-02"},
+    {"id": "N13", "name": "Old Airport Road Flyover", "lat": 12.9610, "lng": 77.6350, "type": "INTERSECTION"},
+    {"id": "N14", "name": "Indiranagar Signal 03", "lat": 12.9782, "lng": 77.6385, "type": "SIGNAL_NODE", "signal_id": "SIG-03"},
+    {"id": "N15", "name": "Green Valley Hospital Dest", "lat": 12.9510, "lng": 77.6080, "type": "HOSPITAL_NODE", "hospital_id": "HOSP-04"},
+    {"id": "N16", "name": "Cambridge Layout Arterial", "lat": 12.9710, "lng": 77.6290, "type": "INTERSECTION"}
+  ],
+  "edges": [
+    {"id": "E01", "name": "Residency Road Northbound", "from": "N01", "to": "N02", "length_km": 0.72, "speed_limit_kmh": 45, "road_type": "ARTERIAL", "lanes": 3},
+    {"id": "E02", "name": "Mayo Cross Connector", "from": "N02", "to": "N03", "length_km": 0.15, "speed_limit_kmh": 40, "road_type": "ARTERIAL", "lanes": 3},
+    {"id": "E03", "name": "MG Road Main Corridor", "from": "N03", "to": "N04", "length_km": 1.15, "speed_limit_kmh": 50, "road_type": "EXPRESSWAY", "lanes": 4},
+    {"id": "E04", "name": "Ulsoor Lake Boulevard", "from": "N04", "to": "N05", "length_km": 0.76, "speed_limit_kmh": 45, "road_type": "ARTERIAL", "lanes": 3},
+    {"id": "E05", "name": "Apex Trauma Emergency Ramp", "from": "N05", "to": "N06", "length_km": 0.38, "speed_limit_kmh": 35, "road_type": "LOCAL", "lanes": 2},
+    {"id": "E06", "name": "Kasturba Road Westbound", "from": "N01", "to": "N07", "length_km": 0.82, "speed_limit_kmh": 50, "road_type": "ARTERIAL", "lanes": 3},
+    {"id": "E07", "name": "Cubbon Boulevard North", "from": "N07", "to": "N08", "length_km": 1.10, "speed_limit_kmh": 55, "road_type": "EXPRESSWAY", "lanes": 4},
+    {"id": "E08", "name": "Metro North Expressway Link", "from": "N08", "to": "N09", "length_km": 1.18, "speed_limit_kmh": 60, "road_type": "EXPRESSWAY", "lanes": 4},
+    {"id": "E09", "name": "Richmond Road South Corridor", "from": "N01", "to": "N10", "length_km": 0.81, "speed_limit_kmh": 45, "road_type": "ARTERIAL", "lanes": 3},
+    {"id": "E10", "name": "Corporation Link West", "from": "N10", "to": "N11", "length_km": 0.88, "speed_limit_kmh": 50, "road_type": "ARTERIAL", "lanes": 3},
+    {"id": "E11", "name": "St. Jude Heart Center Approach", "from": "N11", "to": "N12", "length_km": 0.85, "speed_limit_kmh": 45, "road_type": "LOCAL", "lanes": 2},
+    {"id": "E12", "name": "Bypass East Link", "from": "N04", "to": "N16", "length_km": 1.25, "speed_limit_kmh": 50, "road_type": "ARTERIAL", "lanes": 3},
+    {"id": "E13", "name": "Indiranagar Express Flyover", "from": "N16", "to": "N14", "length_km": 1.30, "speed_limit_kmh": 55, "road_type": "EXPRESSWAY", "lanes": 4},
+    {"id": "E14", "name": "North Radial Connect to Apex", "from": "N07", "to": "N05", "length_km": 2.35, "speed_limit_kmh": 45, "road_type": "ARTERIAL", "lanes": 3},
+    {"id": "E15", "name": "South Outer Ring to Green Valley", "from": "N10", "to": "N15", "length_km": 1.85, "speed_limit_kmh": 50, "road_type": "ARTERIAL", "lanes": 3}
+  ]
+}

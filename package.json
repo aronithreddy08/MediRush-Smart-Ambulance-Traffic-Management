@@ -1,0 +1,27 @@
+{
+  "name": "medirush-project",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MediRush — AI-Powered Smart Ambulance Traffic Management System",
+  "scripts": {
+    "dev": "npm run dev --prefix dashboard",
+    "build": "npm run build --prefix dashboard",
+    "start": "node dashboard/server.js",
+    "dashboard:dev": "npm run dev --prefix dashboard",
+    "dashboard:build": "npm run build --prefix dashboard",
+    "dashboard:preview": "npm run preview --prefix dashboard",
+    "mobile:dev": "npm run dev --prefix mobile",
+    "backend:start": "cd backend && python -m uvicorn main:app --reload --port 8000"
+  },
+  "keywords": [
+    "smart-ambulance",
+    "traffic-management",
+    "emergency-vehicle-preemption",
+    "green-wave",
+    "threejs",
+    "fastapi",
+    "react"
+  ],
+  "author": "Aroni",
+  "license": "MIT"
+}

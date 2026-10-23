@@ -1,0 +1,27 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Dashboard (Node Standalone Server)",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/dashboard/server.js",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Backend (FastAPI)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": [
+        "main:app",
+        "--reload",
+        "--port",
+        "8000"
+      ],
+      "cwd": "${workspaceFolder}/backend",
+      "jinja": true,
+      "justMyCode": true
+    }
+  ]
+}

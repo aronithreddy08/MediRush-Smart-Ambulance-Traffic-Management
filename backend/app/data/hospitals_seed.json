@@ -1,0 +1,54 @@
+[
+  {
+    "hospital_id": "HOSP-01",
+    "name": "Apex City Super Specialty & Trauma Center",
+    "address": "42 Emergency Medical Way, Central District",
+    "latitude": 12.9820,
+    "longitude": 77.6180,
+    "emergency_capability": true,
+    "specializations": "CARDIAC,TRAUMA,NEURO,BURN,GENERAL",
+    "total_icu_beds": 35,
+    "available_icu_beds": 14,
+    "contact_phone": "+91 80 4422 1001",
+    "readiness_score": 0.98
+  },
+  {
+    "hospital_id": "HOSP-02",
+    "name": "St. Jude Heart & Vascular Institute",
+    "address": "15 Cardiology Boulevard, West End",
+    "latitude": 12.9650,
+    "longitude": 77.5820,
+    "emergency_capability": true,
+    "specializations": "CARDIAC,VASCULAR,GENERAL",
+    "total_icu_beds": 24,
+    "available_icu_beds": 9,
+    "contact_phone": "+91 80 4422 2002",
+    "readiness_score": 0.94
+  },
+  {
+    "hospital_id": "HOSP-03",
+    "name": "Metro Trauma & General Medical Hospital",
+    "address": "88 North Ring Expressway, North Sector",
+    "latitude": 12.9950,
+    "longitude": 77.5950,
+    "emergency_capability": true,
+    "specializations": "TRAUMA,ORTHOPEDIC,GENERAL",
+    "total_icu_beds": 20,
+    "available_icu_beds": 3,
+    "contact_phone": "+91 80 4422 3003",
+    "readiness_score": 0.86
+  },
+  {
+    "hospital_id": "HOSP-04",
+    "name": "Green Valley Community Emergency Care",
+    "address": "104 South Cross Road, South District",
+    "latitude": 12.9510,
+    "longitude": 77.6080,
+    "emergency_capability": true,
+    "specializations": "GENERAL,PEDIATRIC,STROKE",
+    "total_icu_beds": 15,
+    "available_icu_beds": 6,
+    "contact_phone": "+91 80 4422 4004",
+    "readiness_score": 0.88
+  }
+]

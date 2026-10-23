@@ -1,0 +1,74 @@
+[
+  {
+    "signal_id": "SIG-01",
+    "name": "Mahatma Gandhi Junction (MG Road & Brigade)",
+    "latitude": 12.9735,
+    "longitude": 77.6075,
+    "current_state": "RED",
+    "cycle_duration_sec": 60,
+    "time_in_cycle_sec": 15,
+    "is_preempted": false,
+    "normal_green_direction": "NS",
+    "hardware_ip": "192.168.1.101"
+  },
+  {
+    "signal_id": "SIG-02",
+    "name": "Trinity Circle Flyover Intersection",
+    "latitude": 12.9724,
+    "longitude": 77.6178,
+    "current_state": "YELLOW",
+    "cycle_duration_sec": 60,
+    "time_in_cycle_sec": 28,
+    "is_preempted": false,
+    "normal_green_direction": "EW",
+    "hardware_ip": "192.168.1.102"
+  },
+  {
+    "signal_id": "SIG-03",
+    "name": "Indiranagar 100ft Road Cross",
+    "latitude": 12.9782,
+    "longitude": 77.6385,
+    "current_state": "GREEN",
+    "cycle_duration_sec": 60,
+    "time_in_cycle_sec": 42,
+    "is_preempted": false,
+    "normal_green_direction": "NS",
+    "hardware_ip": "192.168.1.103"
+  },
+  {
+    "signal_id": "SIG-04",
+    "name": "Richmond Circle Underpass Intersection",
+    "latitude": 12.9642,
+    "longitude": 77.5968,
+    "current_state": "RED",
+    "cycle_duration_sec": 60,
+    "time_in_cycle_sec": 10,
+    "is_preempted": false,
+    "normal_green_direction": "EW",
+    "hardware_ip": "192.168.1.104"
+  },
+  {
+    "signal_id": "SIG-05",
+    "name": "Corporation Circle North Gate",
+    "latitude": 12.9680,
+    "longitude": 77.5895,
+    "current_state": "RED",
+    "cycle_duration_sec": 60,
+    "time_in_cycle_sec": 35,
+    "is_preempted": false,
+    "normal_green_direction": "NS",
+    "hardware_ip": "192.168.1.105"
+  },
+  {
+    "signal_id": "SIG-06",
+    "name": "Cubbon Park East Gate Intersection",
+    "latitude": 12.9765,
+    "longitude": 77.5982,
+    "current_state": "GREEN",
+    "cycle_duration_sec": 60,
+    "time_in_cycle_sec": 5,
+    "is_preempted": false,
+    "normal_green_direction": "EW",
+    "hardware_ip": "192.168.1.106"
+  }
+]

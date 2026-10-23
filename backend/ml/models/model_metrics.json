@@ -1,0 +1,15 @@
+{
+  "model_version": "1.0.0",
+  "speed_regressor": {
+    "algorithm": "RandomForestRegressor(n_estimators=100, max_depth=14)",
+    "r2_score": 0.9876,
+    "mae_kmh": 1.07,
+    "rmse_kmh": 1.37
+  },
+  "congestion_classifier": {
+    "algorithm": "HistGradientBoostingClassifier(max_iter=120)",
+    "accuracy": 0.9247,
+    "macro_f1": 0.9116
+  },
+  "dataset_samples": 30000
+}
