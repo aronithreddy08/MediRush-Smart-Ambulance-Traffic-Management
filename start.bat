@@ -6,9 +6,9 @@ echo ===================================================================
 echo     MediRush - Smart Ambulance Traffic Management System
 echo ===================================================================
 echo.
-echo   [1] Start Frontend Dashboard Only (Recommended - Fast)
+echo   [1] Start Frontend Dashboard (Standalone Server - Port 5173)
 echo   [2] Start Full Stack (FastAPI Backend + Frontend Dashboard)
-echo   [3] Start Frontend Development Server (Vite)
+echo   [3] Start Frontend Development Server (Vite Dev - Port 5173)
 echo   [4] Start Backend API Only (FastAPI on Port 8000)
 echo.
 set /p choice="Enter choice [1-4] (Default is 1): "
@@ -29,8 +29,12 @@ goto end
 :start_fullstack
 echo.
 echo Starting FastAPI Backend on http://localhost:8000 ...
-start "MediRush Backend (FastAPI)" cmd /c "cd /d "%~dp0backend" && call .venv\Scripts\activate.bat && python -m uvicorn main:app --reload --port 8000"
-timeout /t 2 >nul
+if exist "backend\.venv\Scripts\python.exe" (
+    start "MediRush Backend (FastAPI)" cmd /c "cd /d "%~dp0backend" & .venv\Scripts\python.exe -m uvicorn main:app --reload --port 8000"
+) else (
+    start "MediRush Backend (FastAPI)" cmd /c "cd /d "%~dp0backend" & python -m uvicorn main:app --reload --port 8000"
+)
+timeout /t 3 >nul
 echo Starting MediRush Dashboard on http://localhost:5173 ...
 cd dashboard
 node server.js
@@ -47,10 +51,11 @@ goto end
 echo.
 echo Starting FastAPI Backend on http://localhost:8000 ...
 cd backend
-if exist ".venv\Scripts\activate.bat" (
-    call .venv\Scripts\activate.bat
+if exist ".venv\Scripts\python.exe" (
+    .venv\Scripts\python.exe -m uvicorn main:app --reload --port 8000
+) else (
+    python -m uvicorn main:app --reload --port 8000
 )
-python -m uvicorn main:app --reload --port 8000
 goto end
 
 :end
